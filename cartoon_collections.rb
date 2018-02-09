@@ -4,14 +4,14 @@ end
 
 def summon_captain_planet(array)
   word = []
-  array.map { |call| call.capitalize + "!"}
+  array.map { |call| array.capitalize + "!"}
 end
 
-def long_planeteer_calls(calls)
+def long_planeteer_calls()
   calls.any? { |word| word.length > 4 }
 end
 
-def find_the_cheese(word_list)
+def find_the_cheese(word_list, cheese_types)
   cheese_types = ["cheddar", "gouda", "camembert"]
   word_list.find{|word| cheese_types.include?(word)}
 end
